@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, p {
+    color: rgb(58, 58, 58);
+    font-family: 'Raleway', sans-serif;
+}
+.content {
+    padding: 30px 100px; 
+}
+
+.row {
+    width: 100%;
+}
+
+.main-title {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.categorie {
+    margin: 8px 8px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.categorie_tag {
+    display: inline-block;
+    width: auto;
+    border-left-width: 2px solid;
+    border-left-style: solid;
+    border-bottom-width: 2px solid;
+    border-bottom-style: solid;
+    color: #fafafa;
+    border-radius: 0 6px 0 0;
+    padding: 4px 32px;
+    position: absolute;
+    right: 0;
+    font-weight: 500;
+    
+}
+
+.categorie_p {
+    margin: 40px 16px 16px 16px;
+    font-weight: 300;
+}
+
+.categorie_woman {
+    background-color: rgb(255, 226, 234);
+    border: 2px solid rgb(255, 55, 112);
+}
+
+.tag_woman {
+    border-left-color: rgb(255, 55, 112);
+    border-bottom-color: rgb(255, 55, 112);
+    background-color: rgb(255, 55, 112);
+
+}
+
+.categorie_men{
+    background-color: rgb(237, 237, 254);
+    border: 2px solid rgb(56, 56, 141);
+}
+
+.tag_men {
+    border-left-color: rgb(56, 56, 141);
+    border-bottom-color: rgb(56, 56, 141);
+    background-color: rgb(56, 56, 141);
+
+}
+
+.categorie_kids{
+    background-color: rgb(255, 219, 250);
+    border: 2px solid rgb(191, 68, 172);
+}
+
+.tag_kids {
+    border-left-color: rgb(191, 68, 172);;
+    border-bottom-color: rgb(191, 68, 172);;
+    background-color: rgb(191, 68, 172);
+
+}
+
+
+/*DESKTOP DEVICE*/
+
+@media (min-width: 992px) {
+
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    
+    .col-lg-3 {
+        width: 25%;
+    }
+    
+    .col-lg-4 {
+        width: 31%;
+    }
+    
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    
+    .col-lg-6 {
+        width: 50%;
+    }
+    
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+    }
+
+}
+
+/*TABLE DEVICE*/
+
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-1 {
+        width: 8.33%;
+    }
+    
+    .col-md-2 {
+        width: 16.66%;
+    }
+    
+    .col-md-3 {
+        width: 25%;
+    }
+    
+    .col-md-4 {
+        width: 33%;
+    }
+    
+    .col-md-5 {
+        width: 41.66%;
+    }
+    
+    .col-md-6 {
+        width: 47%;
+    }
+    
+    .col-md-7 {
+        width: 58.33%;
+    }
+    
+    .col-md-8 {
+        width: 66.66%;
+    }
+    
+    .col-md-9 {
+        width: 74.99%;
+    }
+    
+    .col-md-10 {
+        width: 83.33%;
+    }
+    
+    .col-md-11 {
+        width: 91.66%;
+    }
+    
+    .col-md-12 {
+        width: 96%;
+    }
+
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+}
+
+
+/*MOVILE DEVICES*/
+
+@media (max-width: 767px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    
+    .col-s-2 {
+        width: 16.66%;
+    }
+    
+    .col-s-3 {
+        width: 25%;
+    }
+    
+    .col-s-4 {
+        width: 33%;
+    }
+    
+    .col-s-5 {
+        width: 41.66%;
+    }
+    
+    .col-s-6 {
+        width: 50%;
+    }
+    
+    .col-s-7 {
+        width: 58.33%;
+    }
+    
+    .col-s-8 {
+        width: 66.66%;
+    }
+    
+    .col-s-9 {
+        width: 74.99%;
+    }
+    
+    .col-s-10 {
+        width: 83.33%;
+    }
+    
+    .col-s-11 {
+        width: 91.66%;
+    }
+    
+    .col-s-12 {
+        width: 100%;
+    }
+
+    .col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12 {
+        float: left;
+    }
+}
+
