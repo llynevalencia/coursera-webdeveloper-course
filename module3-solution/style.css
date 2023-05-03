@@ -1,0 +1,23 @@
+body {
+    padding: 0 5%;
+}
+
+.text_container {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(255, 243, 232);
+}
+
+.btn {
+
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.beef {
+    background-color: rgb(255, 0, 0, 0.1);
+}
+
+.sushi {
+    background-color: rgba(145, 255, 0, 0.1);
+}
