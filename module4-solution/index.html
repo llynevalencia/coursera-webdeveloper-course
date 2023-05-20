@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Solution Starter</title>
+
+</head>
+<body>
+  <h1>Module 4 Solution Starter</h1>
+
+  <p>Solution is on a script tag inside index.html</p>
+  <script src="SpeakHello.js" type="js"></script>
+  <script src="SpeakGoodBye.js" type="js"></script>
+  <script src="script.js" type="js"></script>
+
+    <script>
+        (function () {
+            var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+            // Create 'helloSpeaker' object and attach the 'speak' method
+            var helloSpeaker = {
+                speak: function (name) {
+                console.log("Hello " + name);
+                }
+            };
+
+            // Expose 'helloSpeaker' object to the global scope
+            window.helloSpeaker = helloSpeaker;
+
+            // Wrap the entire contents of SpeakGoodBye.js inside an IIFE
+            (function () {
+                // Create 'byeSpeaker' object and attach the 'speak' method
+                var byeSpeaker = {
+                speak: function (name) {
+                    console.log("Good Bye " + name);
+                }
+                };
+
+                // Expose 'byeSpeaker' object to the global scope
+                window.byeSpeaker = byeSpeaker;
+
+                // Loop over the names array and say either 'Hello' or 'Good Bye'
+                for (var i = 0; i < names.length; i++) {
+                    var firstLetter = names[i].charAt(0).toLowerCase();
+                    if (firstLetter === 'j') {
+                        byeSpeaker.speak(names[i]);
+                    } else {
+                        helloSpeaker.speak(names[i]);
+                    }
+                }
+            })();
+        })();
+
+    </script>
+</body>
+</html>
+
