@@ -18,19 +18,15 @@
         (function () {
             var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-            // Create 'helloSpeaker' object and attach the 'speak' method
             var helloSpeaker = {
                 speak: function (name) {
                 console.log("Hello " + name);
                 }
             };
 
-            // Expose 'helloSpeaker' object to the global scope
             window.helloSpeaker = helloSpeaker;
 
-            // Wrap the entire contents of SpeakGoodBye.js inside an IIFE
             (function () {
-                // Create 'byeSpeaker' object and attach the 'speak' method
                 var byeSpeaker = {
                 speak: function (name) {
                     console.log("Good Bye " + name);
@@ -40,7 +36,6 @@
                 // Expose 'byeSpeaker' object to the global scope
                 window.byeSpeaker = byeSpeaker;
 
-                // Loop over the names array and say either 'Hello' or 'Good Bye'
                 for (var i = 0; i < names.length; i++) {
                     var firstLetter = names[i].charAt(0).toLowerCase();
                     if (firstLetter === 'j') {
